@@ -1,0 +1,32 @@
+/*Elements principaux de la page*/
+body
+{
+	font-family: Arial, sans-serif;
+	display: flex;
+}
+
+/*Section personnel*/
+#personnel
+{
+	background-color: #7CB342;
+	width: 20%;
+	padding-left: 20px;
+}
+
+#photo
+{
+	border:solid 2px;
+	margin-right: 40%;
+}
+
+/*Section professionnel*/
+#professionnel
+{
+	padding-left: 50px;
+	width: 80%;
+}
+
+header h1
+{
+	text-transform: uppercase;
+}
