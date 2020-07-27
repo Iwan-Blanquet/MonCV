@@ -3,6 +3,8 @@ body
 {
 	font-family: Arial, sans-serif;
 	display: flex;
+	text-align: justify;
+	font-size: 0.8em;
 }
 
 /*Section personnel*/
@@ -10,23 +12,56 @@ body
 {
 	background-color: #7CB342;
 	width: 20%;
-	padding-left: 20px;
+	height: 100%; 
 }
 
 #photo
 {
-	border:solid 2px;
-	margin-right: 40%;
+	text-align: center;
+	border: 3px solid #8BC34A;
+}
+
+#personnel h2
+{
+	background-color: grey;
+	width: 100%;
+	color: #7CB342;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+#personnel p
+{
+	padding-left: 20px;
 }
 
 /*Section professionnel*/
+/*Elément principal de la section professionel*/
 #professionnel
 {
 	padding-left: 50px;
+	padding-right: 20px;
 	width: 80%;
 }
 
-header h1
+#professionnel h2
+{
+	border-bottom: 3px solid #7CB342;
+	font-size: 1.4em;
+	text-transform: uppercase;
+}
+
+/*header*/
+#nom
 {
 	text-transform: uppercase;
+	display: flex;
+	font-size: 1.8em;
+}
+
+#prénom
+{
+	color: #7CB342;
+	margin-right: 5px;
 }
