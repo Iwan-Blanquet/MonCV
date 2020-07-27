@@ -1,48 +1,65 @@
 /*Elements principaux de la page*/
-body
+body{
+	margin: 0;
+}
+.container
 {
 	font-family: Arial, sans-serif;
 	display: flex;
-	text-align: justify;
-	font-size: 0.8em;
+	text-align: justify;	
 }
 
 /*Section personnel*/
 #personnel
 {
 	background-color: #7CB342;
-	width: 20%;
-	height: 100%; 
+	width: 30%;
+	position: relative;
 }
 
-#photo
+.photo
 {
+	margin: 20px 0 20px 0;
 	text-align: center;
-	border: 3px solid #8BC34A;
+
+}
+
+.avatar
+{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
 }
 
 #personnel h2
 {
 	background-color: grey;
-	width: 100%;
 	color: #7CB342;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 1.4em;
+	padding: 5px;
 }
 
 #personnel p
 {
 	padding-left: 20px;
 }
-
+.loisirs
+{
+	margin-top:200px;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+}
 /*Section professionnel*/
 /*Elément principal de la section professionel*/
 #professionnel
 {
 	padding-left: 50px;
 	padding-right: 20px;
-	width: 80%;
+	width: 70%;
 }
 
 #professionnel h2
@@ -53,14 +70,14 @@ body
 }
 
 /*header*/
-#nom
+.nom
 {
 	text-transform: uppercase;
 	display: flex;
 	font-size: 1.8em;
 }
 
-#prénom
+.prénom
 {
 	color: #7CB342;
 	margin-right: 5px;
