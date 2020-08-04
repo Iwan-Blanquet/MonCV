@@ -1,18 +1,25 @@
-/*Elements principaux de la page*/
-body{
+/* ======= Elements principaux de la page ======= */
+body
+{
 	margin: 0;
+	padding: 30px;
 }
 .container
 {
 	font-family: Arial, sans-serif;
+	text-align: justify;
 	display: flex;
-	text-align: justify;	
+	justify-content: center;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 15px #9E9E9E;
 }
 
-/*Section personnel*/
-#personnel
+/* ========== ASIDE ========== */
+.personnel
 {
-	background-color: #7CB342;
+	background-color: #4FC3F7;
 	width: 30%;
 	position: relative;
 }
@@ -31,54 +38,75 @@ body{
 	height: 200px;
 }
 
-#personnel h2
+.personnel h2
 {
-	background-color: grey;
-	color: #7CB342;
+	background-color: #757575;
+	color: #4FC3F7;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 1.4em;
 	padding: 5px;
 }
 
-#personnel p
+.personnel p a
 {
 	padding-left: 20px;
 }
-.loisirs
+
+.contact-section
 {
-	margin-top:200px;
-	bottom: 0;
+	list-style: none;
+	padding-bottom: 20px;
+}
+
+.contact-section p
+{
+	margin: 0;
+}
+
+.hobbies
+{
+
+	position: absolute;
 	width: 100%;
 	text-align: center;
 	padding-bottom: 20px;
+	bottom: 0;
 }
-/*Section professionnel*/
-/*Elément principal de la section professionel*/
-#professionnel
+
+
+/* ====== MAIN ====== */
+/* ====== Elément principal de la section professionel ====== */
+.professionnel
 {
 	padding-left: 50px;
 	padding-right: 20px;
 	width: 70%;
 }
 
-#professionnel h2
+.professionnel h2
 {
-	border-bottom: 3px solid #7CB342;
+	border-bottom: 3px solid #4FC3F7;
 	font-size: 1.4em;
 	text-transform: uppercase;
 }
 
-/*header*/
+
+/* ====== header ====== */
 .nom
 {
 	text-transform: uppercase;
-	display: flex;
 	font-size: 1.8em;
+	margin: 0;
 }
 
-.prénom
+.nom strong
 {
-	color: #7CB342;
+	color: #4FC3F7;
 	margin-right: 5px;
+}
+
+h4
+{
+	margin: 0;
 }
