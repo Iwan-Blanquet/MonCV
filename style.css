@@ -4,6 +4,11 @@ body
 	margin: 0;
 	padding: 30px;
 }
+
+*
+{
+	box-sizing: border-box;
+}
 .container
 {
 	font-family: Arial, sans-serif;
@@ -79,9 +84,8 @@ body
 /* ====== Elément principal de la section professionel ====== */
 .professionnel
 {
-	padding-left: 50px;
-	padding-right: 20px;
 	width: 70%;
+	padding: 45px;
 }
 
 .professionnel h2
@@ -93,11 +97,15 @@ body
 
 
 /* ====== header ====== */
+header
+{
+	margin: 0;
+}
+
 .nom
 {
 	text-transform: uppercase;
-	font-size: 1.8em;
-	margin: 0;
+	font-size: 1.4em;
 }
 
 .nom strong
@@ -106,7 +114,25 @@ body
 	margin-right: 5px;
 }
 
-h4
+h1, h4
 {
 	margin: 0;
+}
+
+/* ====== Article ====== */
+
+.diploma-info
+{
+	display: flex;
+}
+
+.diploma-dates
+{
+	margin: 0;
+	padding-right: 5px;
+}
+
+.diploma-dates p, .experience-date p
+{
+	margin: 0 50px 0 0;
 }
