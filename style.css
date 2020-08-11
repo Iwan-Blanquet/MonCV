@@ -3,7 +3,7 @@ body
 {
 	margin: 0;
 	padding: 30px;
-	font-size: 14px;
+	font-size: 0.8em;
 	font-family: 'Ubuntu', sans-serif;
 }
 
@@ -54,15 +54,15 @@ body
 	padding: 5px;
 }
 
-.personnel p a
+.personnel ul, .about p
 {
-	padding-left: 20px;
+	padding: 10% 10% 0 10%;
 }
 
 .contact-section
 {
 	list-style: none;
-	padding-bottom: 20px;
+	padding-bottom: 10%;
 }
 
 .contact-section p
@@ -112,13 +112,13 @@ main i
 /* ====== header ====== */
 header
 {
-
+	padding-bottom: 20%;
 }
 
 .nom
 {
 	text-transform: uppercase;
-	font-size: 1.4em;
+	font-size: 2.4em;
 }
 
 .nom strong
@@ -143,6 +143,11 @@ h4 span
 {
 	border-bottom: 2px solid #4FC3F7;
 
+}
+
+h4
+{
+	font-size: 2em;
 }
 
 /* ====== Article ====== */
@@ -179,7 +184,22 @@ h4 span
 
 /* ====== Media Queries ====== */
 
-@media all and (max-device-width:480px)
+@media all and (max-device-width: 480px)
 {
-	
+	/* Ecran smartphone */
+
+	body
+	{
+		padding: 0;
+	}
+
+	.container
+	{
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		width: 100%;
+		box-shadow: none;
+		margin: 0;
+	}
 }
