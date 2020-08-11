@@ -183,8 +183,7 @@ h4
 }
 
 /* ====== Media Queries ====== */
-
-@media all and (max-device-width: 480px)
+@media screen and (max-width:1024px)
 {
 	/* Ecran smartphone */
 
@@ -195,11 +194,30 @@ h4
 
 	.container
 	{
-		display: flex;
-		justify-content: flex-start;
-		flex-direction: column;
 		width: 100%;
 		box-shadow: none;
 		margin: 0;
+	}
+
+	.personnel, .professionnel
+	{
+		width:50%;
+	}
+	
+}
+
+@media screen and (max-width:768px)
+{
+	/* Ecran smartphone */
+
+	.container
+	{
+		display: flex;
+		flex-direction: column !important;
+	}
+
+	.personnel, .professionnel
+	{
+		width:100%;
 	}
 }
