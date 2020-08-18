@@ -7,15 +7,10 @@ body
 	font-family: 'Ubuntu', sans-serif;
 }
 
-*
-{
-	box-sizing: border-box;
-}
 .container
 {
 	text-align: justify;
 	display: flex;
-	justify-content: center;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
@@ -54,9 +49,9 @@ body
 	padding: 5px;
 }
 
-.personnel ul, .about p
+.about p
 {
-	padding: 10% 10% 0 10%;
+	padding: 10%;
 }
 
 .contact-section
@@ -72,7 +67,6 @@ body
 
 .hobbies
 {
-
 	position: absolute;
 	width: 100%;
 	text-align: center;
@@ -185,11 +179,10 @@ h4
 /* ====== Media Queries ====== */
 @media screen and (max-width:1024px)
 {
-	/* Ecran smartphone */
-
 	body
 	{
 		padding: 0;
+		font-size: 1.1em;
 	}
 
 	.container
@@ -198,12 +191,53 @@ h4
 		box-shadow: none;
 		margin: 0;
 	}
-
 	.personnel, .professionnel
 	{
 		width:50%;
 	}
-	
+
+	.personnel h2
+	{
+		font-size: 1.4em;
+	}
+	/* ====== Main ====== */
+	.professionnel
+	{
+		padding: 10px;
+		
+	}
+
+	header
+	{
+		padding-bottom: 15%;
+	}
+
+	.nom
+	{
+		font-size: 1.8em;
+	}
+
+	h3
+	{
+		font-size: 1.2em;
+	}
+	h4
+	{
+		font-size: 1.6em;
+	}
+
+	h2
+	{
+		font-size: 1.4em;
+	}
+	.diploma-info
+	{
+		display: inherit;
+	}
+	.diploma-content, .experience-content
+	{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width:768px)
@@ -214,10 +248,53 @@ h4
 	{
 		display: flex;
 		flex-direction: column !important;
+		text-align: left;
+		font-size: 1.2em;
 	}
 
 	.personnel, .professionnel
 	{
 		width:100%;
 	}
+
+	.contact-info
+	{
+		text-align: center;
+	}
+
+	.contact-section,
+	{
+		padding-bottom: 5%;
+	}
+
+	.about p
+	{
+		padding: 5%;
+	}
+
+	.hobbies
+	{
+		position: inherit;
+	}
+
+	header
+	{
+		padding:10% 0;
+	}
+
+	h2
+	{
+		padding-top: 5%;
+	}
+
+	.diploma-info, .recommandation-content
+	{
+		padding-top: 5%;
+	}
+
+	.diploma-content p, .experience-content p
+	{
+		display: none;
+	}
+
 }
